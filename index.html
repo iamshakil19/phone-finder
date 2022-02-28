@@ -17,13 +17,40 @@
         rel="stylesheet">
 
     <!--============== css link =============-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./coustom/myStyle.css">
 </head>
 
 <body>
-    <h2>Phone Finder</h2>
-    <main>
+    <main id="main">
+      <!-- Search section -->
+      <div class="input-group mb-3 w-50 mx-auto mt-4">
+        <input id="search-input" type="text" class="form-control input" placeholder="Search Phone By Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchResult()" class="btn btn-style ms-1 text-light" type="button" id="button-addon2">Search</button>
+      </div>
+      <!-- error message -->
+      <div id="error" class="text-center text-danger fs-4 fw-bolder">
 
+      </div>
+      
+      <!-- Search result section -->
+      <div id="search-result">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     </main>
     <!--========== font awesome link  ===========-->
     <script src="https://kit.fontawesome.com/2e70afc032.js" crossorigin="anonymous"></script>

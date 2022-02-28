@@ -1,0 +1,26 @@
+body{
+    background-image: url(../resource/image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.719);
+    background-blend-mode: overlay;
+}
+#main{
+    width: 80%;
+    margin: 0 auto;
+}
+.input{
+    border-radius: 20px;
+}
+.btn-style{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 20px;
+    font-weight: 600;
+}
+.btn-style:hover{
+    background-color: rgb(68, 68, 253);
+    border: 2px solid rgb(38, 0, 255);
+}
