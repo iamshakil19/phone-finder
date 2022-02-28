@@ -24,3 +24,21 @@ body{
     background-color: rgb(68, 68, 253);
     border: 2px solid rgb(38, 0, 255);
 }
+#spinner{
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+.details-button{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: 2px solid rgb(40, 40, 246);
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 18px;
+    color: rgb(63, 63, 252);
+}
+.details-button:hover{
+    background-color: rgb(52, 52, 218);
+    color: white;
+    transition: .2s;
+}
