@@ -22,7 +22,7 @@ body{
 }
 .btn-style:hover{
     background-color: #0B5ED7;
-    border: 2px solid rgb(38, 0, 255);
+    border: 2px solid rgb(148, 148, 148);
 }
 #spinner{
     display: none;
@@ -33,7 +33,7 @@ body{
     text-decoration: none;
     border: 2px solid rgb(40, 40, 246);
     border-radius: 5px;
-    padding: 3px 8px;
+    padding: 5px 9px;
     font-size: 18px;
     color: rgb(63, 63, 252);
     cursor: pointer;
@@ -41,8 +41,13 @@ body{
 .details-button:hover{
     background-color: #156ef3;
     color: white;
-    transition: .3s;
+    transition: .4s;
 }
-#show-all-button{
-    display: none;
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+.web-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
 }
