@@ -2,9 +2,12 @@
 const error = document.getElementById('error')
 const productDetails = document.getElementById('details')
 const searchData = document.getElementById('search-result');
+const showAllCard = document.getElementById('show-all-card')
 
 //========== function start
-
+const showAllButton = showOrHide => {
+    document.getElementById('show-all-button').style.display = showOrHide
+}
 //========== spinner
 const spinner = displaystyle => {
     document.getElementById('spinner').style.display = displaystyle
@@ -12,8 +15,11 @@ const spinner = displaystyle => {
 
 //==========  result 
 const searchResult = () => {
+    showAllButton('none')
     productDetails.textContent = '';
     searchData.textContent = '';
+    showAllButton.textContent = '';
+    showAllCard.textContent = '';
     const searchInput = document.getElementById('search-input');
     const inputValue = searchInput.value;
     if (inputValue == '') {
@@ -31,6 +37,14 @@ const searchResult = () => {
     }
     searchInput.value = '';
 }
+
+
+
+
+
+
+
+
 
 const displaySearchResult = phones => {
     const phoneFound = phones.length
@@ -62,10 +76,31 @@ const displaySearchResult = phones => {
             </div>
             `
             searchData.appendChild(div)
+            showAllButton('block')
             spinner('none')
         })
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //========== details section 
 const details = id => {

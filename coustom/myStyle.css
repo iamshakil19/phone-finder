@@ -21,7 +21,7 @@ body{
     font-weight: 600;
 }
 .btn-style:hover{
-    background-color: rgb(68, 68, 253);
+    background-color: #0B5ED7;
     border: 2px solid rgb(38, 0, 255);
 }
 #spinner{
@@ -39,7 +39,10 @@ body{
     cursor: pointer;
 }
 .details-button:hover{
-    background-color: rgb(52, 52, 218);
+    background-color: #156ef3;
     color: white;
-    transition: .2s;
+    transition: .3s;
+}
+#show-all-button{
+    display: none;
 }
