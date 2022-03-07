@@ -35,7 +35,8 @@ const searchResult = () => {
 
 
 const displaySearchResult = phones => {
-    console.log(phones);
+    let allPhonesData = phones.slice(21, phones.length);
+
     const phoneFound = phones.length
     if (phones.length <= 0) {
         spinner('none')
@@ -59,7 +60,7 @@ const displaySearchResult = phones => {
                         <h6 class="card-text font fw-normal">${phone.brand}</h6>
                     </div>
                     <div class="me-3">
-                        <a onclick="details('${phone.slug}')" class="details-button">Details</a>
+                        <a href="#details" onclick="details('${phone.slug}')" class="details-button">Details</a>
                     </div>
                 </div>
             </div>
@@ -67,20 +68,20 @@ const displaySearchResult = phones => {
             searchData.appendChild(div)
             spinner('none')
         })
+
     }
 }
+
 
 
 //========== details section 
 const details = id => {
     const url = `https://openapi.programming-hero.com/api/phone/${id}`
-    console.log(url);
     fetch(url)
         .then(res => res.json())
         .then(data => displayDetails(data.data))
 }
 const displayDetails = phones => {
-    console.log(phones);
     productDetails.innerHTML = `
     <div class="row">
         <div class="col-lg-5 text-center  my-auto">
